@@ -1,4 +1,6 @@
 ## Welcome to GitHub Pages
+# Zuri-Replica
+A task to replicate zuri website
 
 You can use the [editor on GitHub](https://github.com/TRIPLE-ADE/Zuri-Replica/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
