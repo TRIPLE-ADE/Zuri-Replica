@@ -1,0 +1,85 @@
+@import url('https://fonts.cdnfonts.com/css/graphik');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: graphik, sans-serif;
+    background: rgb(255, 253, 245);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 54px;
+    position: fixed;
+    width: 100%;
+}
+#nav-links{
+    display: flex;
+    align-items: center;
+}
+#page-links ul{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50px;
+}
+#page-links ul li {
+    list-style-type: none;
+    padding-right: 70px;
+}
+a{
+    text-decoration: none;
+}
+#Enroll-btn{
+    display: flex;
+    align-items: center;
+}
+#nav-enroll-link{
+    position: initial;
+    background: #e7332b;
+    border-radius: 71px;
+    color: #fff;
+    padding: 13px 35px;
+}
+#nav-enroll-img{
+    background: #e7332b;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: -50px;
+    margin-top: -37px;
+}
+
+
+#hero-page{
+    display: flex;
+    padding-top: 200px;
+}
+#container{
+    max-width: 50%;
+}
+#container p, #container h1{
+    text-align: center;
+}
+#line1{
+    display: flex;
+    justify-content: right;
+}
+#line2{
+    display: flex;
+    justify-content: end;
+}
+/* .line2-line3{
+    display: flex;
+} */
+#btn{
+    text-align: center;
+    margin-top: 70px;
+}
+#btn a{
+    background: #e7332b;
+    border-radius: 71px;
+    color: #fff;
+    padding: 13px 35px;
+}
