@@ -26,7 +26,9 @@ nav{
 }
 #page-links ul li {
     list-style-type: none;
-    padding-right: 70px;
+    padding-right: 60px;
+    font-size: 18px;
+   
 }
 a{
     text-decoration: none;
@@ -39,8 +41,12 @@ a{
     position: initial;
     background: #e7332b;
     border-radius: 71px;
-    color: #fff;
-    padding: 13px 35px;
+    color: #ffffff;
+    padding: 12px 32px;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 64px;
 }
 #nav-enroll-img{
     background: #e7332b;
@@ -59,7 +65,11 @@ a{
 #container{
     max-width: 50%;
 }
-#container p, #container h1{
+#container h1{
+    text-align: center;
+}
+#container p{
+    color:  #e7332b;
     text-align: center;
 }
 #line1{
