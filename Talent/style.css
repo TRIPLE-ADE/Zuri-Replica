@@ -13,7 +13,7 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 1000;
-    padding: 20px 0 30px 100px;
+    padding: 20px 0 30px 6rem;
     font-size: 16px;
     background-color: #fff;
    
@@ -51,15 +51,16 @@ a{
 }
 #home{
     display: flex;
+    justify-content:space-between;
     /* align-items: center; */
-    padding: 225px 0 0 90px;
-    position: relative;
+    padding: 225px 100px 0 100px;
 }
 #hero-content p:first-child{
     font-size:40px;
     color: #161617;
     font-weight: 600;
     line-height: 49px;
+   
 }
 .line1{
     margin-left: 420px;
@@ -69,9 +70,11 @@ a{
     color: #787878;
     font-size: 18px;
     font-weight: 400;
-    max-width: 410px;
+    max-width: 440px;
     margin-top: 20px;
     text-align: justify;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
 .btn{
     margin-top: 40px;
@@ -83,7 +86,7 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    padding:13px 50px;
+    padding:13px 52px;
     margin-right: 10px;
 }
 .btn .talent-link{
@@ -93,20 +96,20 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    padding:13px 50px;
+    padding:13px 51px;
 }
 #hero-content{
     margin-top: 110px;
 }
 
 .line2{
-    margin-left: 200px;
-    margin-top: 270px;
+     position: absolute; 
+    margin-left: 350px;
+    margin-top: -200px;
     mix-blend-mode: soft-light;
 }
 #hero-image{
-    position: absolute;
-    margin-left: 750px;
+    position: relative;
 }
 
 
@@ -176,7 +179,7 @@ p span{
     padding: 9px 15px 0 15px;
 }
 .section2{
-    padding: 100px;
+    padding: 100px 0 100px 100px;
 }
 .skills-header p{
     color: #161617;
@@ -189,16 +192,21 @@ p span{
 #skills-container{
     position: relative;
 }
+
 .skill-line{
     position: absolute;
-    top: -80px;
-    left: 900px;
+    margin-top: -170px;
+    margin-left: 900px;
+    /* top: -80px;
+    left: 900px; */
     z-index: -1;
 }
+
 .skill-tags{
     display: flex;
     margin-top: 30px;
     margin-bottom: 40px;
+    width: 100%;
 
 }
 .skill-tag{
@@ -275,6 +283,9 @@ p span{
 .card-content p{
     max-width: 280px;
     padding-top: 15px;
+    font-size:17px;
+    font-weight:400;
+    font-style: normal;
     line-height:1.5;
     letter-spacing: 0.009em
 }
@@ -320,3 +331,82 @@ footer{
     text-decoration: none;
     color: #fff!important;
 }
+
+@media (max-width:1200px) {
+    #home{
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        padding: 110px 100px 0 100px;
+        text-align: center;
+       
+    } 
+    #hero-content p:nth-child(3){
+        color: #787878;
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 645px;
+        margin-top: 17px;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: 0.7px;
+       
+    }
+    .hero-img{
+        width: 74%;
+        margin-top: 60px;
+    } 
+    .line-img{
+        width: 287px;
+    }
+    .line2{ 
+       margin-left: 710px;
+       margin-top: -270px;
+   }
+   #section1-content{
+    padding: 200px 0 150px 80px ;
+    line-height:2;
+    }
+   #section1-image{
+    padding: 123px 100px 123px 0;
+    }
+   .skill-line{
+    display: none;
+   }
+   #section1-content p:first-child{
+    font-size:30px;
+    max-width: 430px;
+    line-height: 1.2;
+    }
+    .skills-header p{
+        font-size:30px;
+        width: 35%;
+    }
+    .card{
+        margin: 10px 15px 30px 0;
+    
+    }
+    #second-card{
+        padding: 50px 80px ;
+    }
+    #first-card{
+        padding: 62px 80px;
+    }
+    #third-card, #fourth-card,{
+        padding: 73px 80px;
+    }
+    
+    #fifth-card p{
+        max-width: 730px; 
+        padding-left:220px;
+        padding-right:220px;
+    }
+    .card-content p{
+        max-width: 307px;
+        font-size:17px;
+        line-height:1.5;
+        letter-spacing: 0.009em
+    }
+}   
+   
+
