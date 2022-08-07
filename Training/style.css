@@ -7,17 +7,22 @@
     font-family: graphik, sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
+    
+}
+body{
     background: rgb(255, 253, 245);
 }
+
 nav{
+    background: rgb(255, 253, 245);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 50px;
+    padding: 25px 52px;
     position: fixed;
     width: 100%;
     z-index: 100;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
 }
 #nav-links{
@@ -37,9 +42,9 @@ nav{
 ul li a {
     color: #5c5b5b;
     opacity: 0.9;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-style: normal !important;
-    font-weight: 400 !important;
+    font-weight: lighter;
     letter-spacing: 0.03em;
 }
 a{
@@ -54,9 +59,9 @@ a{
     background: #e7332b;
     border-radius: 71px;
     color: #ffffff;
-    padding: 11px 32px;
+    padding: 12px 32px;
     letter-spacing: 0.03em;
-    font-size: 16px;
+    font-size: 18px;
     min-width: 60px;
 }
 #nav-enroll-img{
@@ -64,41 +69,52 @@ a{
     position: absolute;
     border-radius: 50%;
     padding: 10px;
-    margin-left: -42px;
-    margin-top: -34px;
+    margin-left: -46px;
+    margin-top: -35px;
 }
 
 
 #hero-page{
     display: flex;
-    padding: 182px 60px 0 60px;
+    justify-content: center;
+    
+    align-items: center;
+    padding-top: 200px ;
+    width: 90%;
+    margin: auto;
 
 }
 #container{
     position: relative;
+    
 }
+
 #container p:first-child{
     color:  #e7332b;
     text-align: center;
     opacity: 0.9;
+    font-size: 18px;
+   
 }
 #container p:nth-child(2){
     color: #1b1a20;
-    font-size: 43px;
+    font-size: 49px;
     font-weight: 600;
     line-height: 110%;
     padding-top: 10px;
     text-align: center;
+    letter-spacing: 0.003em;
+    width: 110%;
 }
-#lady1-image{
-    padding-top: 76px;
-}
+/* #lady1-image{
+    padding-top: 60px;
+} */
 #lady1-image img{
     mix-blend-mode: darken!important;    
 }
-#male1-image{
+/* #male1-image{
     padding-top: 52px;
-}
+} */
 #male1-image img{
     mix-blend-mode: darken!important;
 }
@@ -116,11 +132,133 @@ a{
 }
 #btn{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 #btn a{
     background: #e7332b;
     border-radius: 71px;
     color: #fff;
     padding: 13px 35px;
+}
+#enrol-details{
+    background-color: rgb(231, 51, 43)
+}
+.enrol-section{
+    width:80%;
+    margin:80px auto; 
+}
+#stacks-page{
+    margin:80px auto; 
+    width: 90%; 
+}
+#Course-structure{
+    margin:80px auto; 
+    width: 80%;
+}
+#enroll-page{
+    margin:80px auto; 
+    width: 90%;
+}
+#circle{
+    display: flex;
+    margin-bottom:25px;
+}
+#enroll-container{
+    /* background-color: rgb(231, 51, 43); */
+    border-radius: 24px; 
+    background-color: #e7332b;
+    position: relative;
+    text-align: center;
+    /* min-height: 450px; */
+
+    
+}
+#enroll-content{
+    line-height:4.5em;
+    color: #fff!important;
+    margin: auto;
+    width: 50%;
+}
+#enroll-box p:first-child{
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 54px; 
+    line-height:3.5em;
+    
+    
+}
+#enroll-box p:nth-child(2){
+    font-size: 55px;
+    font-weight:600;
+
+}
+#box-enroll-btn a{
+    background: #fff;
+    border-radius: 70px;
+    color: #e7332b;
+    padding: 12px 32px;
+    font-size: 18px;
+    
+
+}
+#box-enroll-btn{
+    margin-top: 20px;
+}
+#curve-round{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+#curve-left{
+    position: absolute;
+    left:-40px;
+    margin-top: -80px;
+}
+#round-right{
+    position: absolute;
+    right:0;
+    margin-top:-105px;
+    
+}
+#round-right{
+    width: 110%;
+    display: flex;
+    justify-content:flex-end;
+}
+#round img{
+    
+    position: absolute;
+    left: 130px;
+    margin-top: 70px;
+
+}
+#bend img{
+    position: absolute;
+    right:0.1em;
+}
+footer{
+    width: 90%;
+    margin: auto;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight:400 !important;
+    color: #1b1a20;
+}
+#contact-info{
+    display: flex;
+    justify-content:space-between;
+}
+#social-links img{
+    padding-right: 8px;
+}
+#copyright-policy{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.6rem 0 2.6rem 0  ;
+}
+#policy{
+    display: flex;
+}
+#policy p:first-child{
+    padding-right: 1rem;
 }

@@ -49,11 +49,15 @@ a{
     line-height: 19px;
     padding:13px 37px;
 }
+main{
+    overflow-x:hidden;
+}
 #home{
     display: flex;
     justify-content:space-between;
     /* align-items: center; */
     padding: 225px 100px 0 100px;
+   
 }
 #hero-content p:first-child{
     font-size:40px;
@@ -63,7 +67,7 @@ a{
    
 }
 .line1{
-    margin-left: 420px;
+    margin-left: 428px;
     margin-top: -23px;
 }
 #hero-content p:nth-child(3){
@@ -123,11 +127,11 @@ a{
     background-image: url(./images/bgsection2.063bd869082548bafa74.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 #section1-content{
     padding: 150px 105px;
     line-height:2;
+    
 }
 #section1-content p:first-child{
     font-size:40px;
@@ -157,6 +161,7 @@ p span{
 #country-details{
     display:flex;
     align-items: center;
+   
 }
 .country-image{
     background-color: #fff;
@@ -195,10 +200,8 @@ p span{
 
 .skill-line{
     position: absolute;
-    margin-top: -170px;
+    margin-top: -167px;
     margin-left: 900px;
-    /* top: -80px;
-    left: 900px; */
     z-index: -1;
 }
 
@@ -206,22 +209,43 @@ p span{
     display: flex;
     margin-top: 30px;
     margin-bottom: 40px;
-    width: 100%;
+    min-width: 200px;
+    /* width: calc(100% + 24px); */
 
 }
 .skill-tag{
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 25px;
+}
+.skill-tag p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
     color: #787878;
+    line-height: 40px;
+    padding: 7px 29px;
+}
+#talent0 p, #talent1 p, #talent2 p, #talent3 p, #talent4 p, #talent5 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    color: #787878;
+    line-height: 40px;
+    margin-right: 15px;
+    padding: 7px 21px;
     font-size: 18px;
     font-weight: 400;
-    padding: 18px 27px;
-    margin-right: 25px;
-}
-#talent0, #talent1, #talent2, #talent3, #talent4, #talent5{
-    margin-right: 15px!important;
-    padding: 18px 20px;
 }
 #whyUs{
     background-color: rgb(255, 248, 229);
@@ -232,6 +256,7 @@ p span{
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    
 }
 #section3-header{
     color: #161617;
@@ -258,7 +283,6 @@ p span{
     color: #787878;
     display: flex;
     flex-direction: column;
-    /* height: 185px; */
     justify-content: center;
     padding: 50px;
     text-align: center;
@@ -332,7 +356,7 @@ footer{
     color: #fff!important;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1115px) {
     #home{
         flex-direction: column;
         justify-content: center;  
@@ -359,54 +383,159 @@ footer{
     .line-img{
         width: 287px;
     }
+   
     .line2{ 
-       margin-left: 710px;
+       margin-left:655px;
        margin-top: -270px;
    }
+   #Impact{
+   
+    margin-top: 100px;
+    }
+   .section1{
+    display: flex;
+    justify-content: space-between;
+   }
+   
    #section1-content{
-    padding: 200px 0 150px 80px ;
+    max-width: 50%;
+    padding: 150px 0 150px 85px ;
     line-height:2;
     }
+    .country-image{
+        margin: 8px;
+    }
+    #ger-image img{
+        width:36px;
+    }
+    
+    #eng-image img{
+        width:33px;
+    }
+
+    #ind-image img{
+        width:31px;
+    }
+    
+    #nig-image img{
+        width:33px;
+    }
+    
+    #usa-image img{
+        width:28px;
+    }
+   
    #section1-image{
-    padding: 123px 100px 123px 0;
+    padding: 130px 0 123px 30px;
+    
+    }
+    #section1-image{
+        width:50%;
+    }
+    #section1-image img{
+        width:80%;
     }
    .skill-line{
     display: none;
    }
    #section1-content p:first-child{
+    margin-top:70px;
     font-size:30px;
-    max-width: 430px;
     line-height: 1.2;
     }
     .skills-header p{
         font-size:30px;
-        width: 35%;
     }
     .card{
         margin: 10px 15px 30px 0;
+        max-width: 50%;
     
     }
-    #second-card{
-        padding: 50px 80px ;
-    }
-    #first-card{
-        padding: 62px 80px;
-    }
-    #third-card, #fourth-card,{
-        padding: 73px 80px;
-    }
-    
-    #fifth-card p{
-        max-width: 730px; 
-        padding-left:220px;
-        padding-right:220px;
+    .card-content{
+        background-color: #fff;
+        height: 300px;
+        padding: 10px !important;
+        width: 100%;
     }
     .card-content p{
-        max-width: 307px;
+       margin-left: 60px;
+        margin-right: 60px;
+        max-width: 305px;
+        /* max-width: 50%; */
         font-size:17px;
         line-height:1.5;
-        letter-spacing: 0.009em
+        letter-spacing: 0.009em;
+
     }
+    #fifth {
+        /* width: 100% ; */
+        /* margin-left: 70px;
+        margin-right: 70px; */
+    }
+    /* #fifth-card p {
+        max-width: 580px;
+    } */
+
+}
+@media (max-width:900px) {
+    nav{
+        padding: 23px 0 30px 2rem;
+       
+    }
+    ul{
+        padding-right:20px;
+      
+    }
+    ul li {
+        list-style-type: none;
+        padding-right:0;
+    }
+    #home-link, #impact-link, #why-link{
+        display: none;
+    }
+    #hire-link{
+        padding:13px 50px;
+        letter-spacing:0.03em;
+    }
+    .line2 {
+    display: none;
+    }
+
+    .section1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    #section1-image img{
+    width: 50%;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    }
+    #section1-image{
+        padding: 0px 0 123px 0;
+        
+    }
+    #section1-content{
+        width: 90%;
+        line-height:1.7;
+        padding: 100px 50px 50px 70px ;
+            
+    }
+    #section1-content p:first-child{
+        max-width: 700px;
+        line-height:1.7;
+    }
+    #country-details{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
 }   
    
 
