@@ -236,6 +236,36 @@ a{
     position: absolute;
     right:0.1em;
 }
+#faq-box{
+    width:70%;
+    margin: auto;
+}
+.faq-content{
+    position: relative;
+    margin: 10px 20px;
+    
+}
+.faq-content .content-header{
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.content-header::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size:16px;
+
+}
+.content{
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    transition:0.5s;
+}
 footer{
     width: 90%;
     margin: auto;
