@@ -237,34 +237,43 @@ a{
     right:0.1em;
 }
 #faq-box{
-    width:70%;
+    width:79%;
     margin: auto;
 }
 .faq-content{
     position: relative;
-    margin: 10px 20px;
+    margin:0 20px;
+    /* background-color: rgb(255, 253, 245) !important; */
+    border: 1px solid rgba(71, 44, 111, 0.43);
+    padding: 20px;
     
 }
 .faq-content .content-header{
     position: relative;
     cursor: pointer;
-    padding: 10px;
-    
+    padding-top: 10px;    
 }
 .content-header::before{
     content: "+";
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: -5px;
     transform: translateY(-50%);
-    font-size:16px;
+    font-size:2em;
 
+}
+.faq-content.active .content-header::before{
+    rot
 }
 .content{
     position: relative;
-    padding: 10px;
     overflow: hidden;
     transition:0.5s;
+    height: 0;
+    padding-top: 10px;
+}
+.faq-content.active .content{
+    height:auto;
 }
 footer{
     width: 90%;

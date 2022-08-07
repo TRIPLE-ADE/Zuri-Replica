@@ -499,5 +499,16 @@
       <!-- copyright-policy state end -->
     </footer>
     <!-- footer state end -->
+
+    <script>
+      const accordion = document.getElementsByClassName('faq-content');
+
+      for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')    
+      
+        })
+      }
+    </script>
   </body>
 </html>
