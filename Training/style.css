@@ -4,13 +4,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: graphik, sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
     
 }
 body{
     background: rgb(255, 253, 245);
+    font-family: graphik, sans-serif;
 }
 
 nav{
@@ -44,7 +44,7 @@ ul li a {
     opacity: 0.9;
     font-size: 18px !important;
     font-style: normal !important;
-    font-weight: lighter;
+    font-weight:400;
     letter-spacing: 0.03em;
 }
 a{
@@ -75,18 +75,19 @@ a{
 
 
 #hero-page{
-    display: flex;
-    justify-content: center;
-    
+    display: flex;    
     align-items: center;
+    justify-content: center;
     padding-top: 200px ;
     width: 90%;
     margin: auto;
+    margin-bottom: 60px;
 
 }
 #container{
     position: relative;
-    
+    margin: auto; 
+    margin-left: -50px;
 }
 
 #container p:first-child{
@@ -104,17 +105,24 @@ a{
     padding-top: 10px;
     text-align: center;
     letter-spacing: 0.003em;
-    width: 110%;
+    width: 100%;
+    margin: auto;
 }
-/* #lady1-image{
-    padding-top: 60px;
-} */
+#container p:nth-child(4){
+    color: #1b1a20;
+    line-height: 130%;
+    padding-top: 20px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+#lady1-image{
+    margin-top: -24px;
+}
 #lady1-image img{
     mix-blend-mode: darken!important;    
 }
-/* #male1-image{
-    padding-top: 52px;
-} */
 #male1-image img{
     mix-blend-mode: darken!important;
 }
@@ -125,20 +133,150 @@ a{
 #line2{
     display: flex;
     justify-content: end;
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 160px;
 }
 .line3{
     position: absolute;
-    top:230px;
+    left: 20px;
+    top:350px;
 }
 #btn{
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 #btn a{
     background: #e7332b;
     border-radius: 71px;
     color: #fff;
     padding: 13px 35px;
+}
+.empty-div{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    width:90% ;
+    margin: auto;
+}
+#about-page{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+}
+#left-details, #centre-details, #right-details{
+    width: 33%;
+}
+#centre-details{
+ display: flex;
+ justify-content: center;
+}
+#left-details{
+    color: #1b1a20;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+}
+#centre-details img{
+ width: 60%;
+}
+#right-details{
+        color: #1b1a20;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 130%;
+        text-align: right;
+}
+
+#whyUs-page{
+    width: 88%;
+    margin: auto;
+    padding-top: 49px;
+
+}
+#whyUs-container{
+    display: flex;
+    flex-flow: row-wrap;
+    align-items: center;
+}
+#left{
+    width: 60%;
+}
+#left p:nth-child(2){
+    font-size: 24px;
+    color: #e7332b;
+    font-weight: 400;
+    line-height: 130%;
+}
+#left p:nth-child(3){
+    font-size: 40px;
+    color: #1b1a20;
+    font-weight: 600;
+    line-height: 130%;
+}
+#line{
+    display: flex;
+    justify-content: center;
+}
+#right #star{
+    display: flex;
+    justify-content:right ;
+    align-items: center;
+    margin-top: 90px;
+}
+#Program-details{
+    width: 92%;
+    margin: auto;
+    padding-top: 70px;
+
+}
+.main-card{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.main-card .card{
+    max-width: 31%;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    padding: 58px 48px 93px 50px;
+    margin-left:20px ;
+    margin-bottom: 25px;
+    color: #1b1a20;
+}
+.main-card .card:hover{
+    transform: translateY(-15px);
+    transition:0.5s;
+}
+.main-card .card img{
+    width:40%;
+    display: flex;
+    margin-top:-58px;
+    margin-right: -49px;
+    float: right;
+}
+#remote{
+    background-color: #e7332b;
+    color: #fff;
+}
+.card p:nth-child(2){
+    font-size: 60px;
+    line-height: 130%;
+    font-weight: 700;
+    letter-spacing: 0.009;
+}
+.card p:nth-child(3){
+    font-size: 37px;
+    padding: 36px 0;
+    line-height: 130%;
+    font-weight: 500;
+    letter-spacing: 0.009;
+}
+.card p:nth-child(4){
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.009;
 }
 #enrol-details{
     background-color: rgb(231, 51, 43)
@@ -256,14 +394,17 @@ a{
 .content-header::before{
     content: "+";
     position: absolute;
-    top: 50%;
+    top: -10%;
     right: -5px;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
+    transform: rotate(0deg);
+    transition:0.5s;
     font-size:2em;
 
 }
 .faq-content.active .content-header::before{
-    rot
+    transform: rotate(180deg);
+    transition:0.5s;
 }
 .content{
     position: relative;
@@ -271,6 +412,8 @@ a{
     transition:0.5s;
     height: 0;
     padding-top: 10px;
+    font-size: 14px!important;
+    font-family:'Times New Roman', Times, serif !important;
 }
 .faq-content.active .content{
     height:auto;
