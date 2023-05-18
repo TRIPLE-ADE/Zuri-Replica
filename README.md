@@ -1,6 +1,39 @@
 ## Welcome to GitHub Pages
 # Zuri-Replica
 A task to replicate zuri website
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+The tesk is to replicate the existing zuri task as an intern of Zuri/I4g 
+
+### Screenshot
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/TRIPLE-ADE/Zuri-Replica)
+- Live Site URL: [Add live site URL here](https://triple-ade.github.io/Zuri-Replica/)
+
+## My process
+- Gathered all required resources from the existing site
+- Design the layout
+- Responsiveness across different screen sizes 
+
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+
 
 You can use the [editor on GitHub](https://github.com/TRIPLE-ADE/Zuri-Replica/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
