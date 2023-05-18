@@ -17,6 +17,10 @@ The tesk is to replicate the existing zuri task as an intern of Zuri/I4g
 
 ### Screenshot
 
+![](./main.png)
+![](./talent.png)
+![](./training.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/TRIPLE-ADE/Zuri-Replica)
